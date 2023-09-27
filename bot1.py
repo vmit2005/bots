@@ -10,7 +10,7 @@ import os
 
 """
 
-token = '6095966259:AAG6CZs49RejaIhQTjfaSzwnWozEgUyyRW4'
+token = '<>'
 bot = telebot.TeleBot(token)
 
 
