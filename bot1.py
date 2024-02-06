@@ -10,14 +10,20 @@ import os
 
 """
 
-token = '<>'
+token = '6095966259:AAG6CZs49RejaIhQTjfaSzwnWozEgUyyRW4'
 bot = telebot.TeleBot(token)
 
 
 @bot.message_handler(content_types=['photo'])
 def get_user_photo(message):
 
-    fileid = message.json['photo'][2]['file_id']
+    print(message.json['photo'])
+
+
+    l=(len(message.json['photo']))-1
+    fileid = message.json['photo'][l]['file_id']
+    print(fileid)
+
     try:
         name_photo = message.json['caption'] + ".jpg"
     except:

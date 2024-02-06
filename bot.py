@@ -4,7 +4,7 @@ from random import choice
 import urllib.request
 import time
 
-token = ''
+token = '6095966259:AAG6CZs49RejaIhQTjfaSzwnWozEgUyyRW4'
 ranchoise = ["Что за фигню ты несеш?", "Что с этим пареньком?", "Да и пес с ними!", "Не люблю сигнализации!"]
 bot = telebot.TeleBot(token)
 
